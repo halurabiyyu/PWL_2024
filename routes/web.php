@@ -58,3 +58,5 @@ Route::get('/user/{name?}', function($name='John'){
 Route::get('/user/profile', function(){
     return "Profile";
 }) -> name('profile');
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
